@@ -1,0 +1,247 @@
+.hero {
+  padding: 60px;
+  width: 100%;
+}
+.btn {
+  border-radius: 20px;
+  padding: 0px 50px;
+  width: 224px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--call-to-action);
+  gap: 5px;
+  margin-bottom: 10px;
+  &:hover {
+    background: #5c3dff;
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  h1 {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--text);
+  }
+}
+.btn2 {
+  border-radius: 20px;
+  padding: 0px 50px;
+  width: 224px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--call-to-action);
+  gap: 5px;
+  margin-bottom: 10px;
+  &:hover {
+    background: #5c3dff;
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  h1 {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--text);
+  }
+}
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.stats2 {
+    display: none;
+}
+.hero-h1 {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 67px;
+  line-height: 110%;
+  text-transform: capitalize;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+.lead {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+.stat {
+  h1 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: var(--text);
+  }
+  p {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: var(--text);
+  }
+}
+.hero-wrap {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  gap: 40px;
+}
+.hero-left,
+.hero-right {
+  width: 100%;
+}
+.btn2 {
+    display: none;
+}
+.hero-bottom {
+  border-radius: 0 0 20px 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 510px;
+  height: 109px;
+  background: var(--background---secondary);
+  h1 {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: var(--text);
+  }
+  h2 {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--text);
+  }
+}
+.avatar {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+@media (max-width: 1000px) {
+  .hero-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px;
+  }
+
+  .hero-left {
+    order: 1;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-right {
+    order: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   .btn {
+    display: none;
+   }
+  .btn2 {
+    display: flex;
+    order: 3;
+    margin: 20px auto 0;
+    width: 100%;
+    max-width: 300px;
+  }
+   .stats {
+    display: none;
+   }
+  .stats2 {
+    display: flex;
+    order: 4;
+    gap: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    white-space: nowrap;
+  }
+
+  .hero-bottom {
+    width: 100%;     
+    max-width: 350px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-h1 {
+    font-size: 32px;
+    line-height: 120%;
+  }
+
+  .lead {
+    font-size: 16px;
+  }
+
+  .btn2 {
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .stats2 h1 {
+    font-size: 20px;
+  }
+
+  .stats2 p {
+    font-size: 14px;
+  }
+
+  .hero-bottom {
+    max-width: 100%;
+    padding: 15px;
+  }
+}
+@media (max-width: 300px) {
+  .hero {
+    padding: 20px;
+  }
+
+  .btn2 {
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .hero-h1 {
+    font-size: 28px;
+  }
+
+  .lead {
+    font-size: 14px;
+  }
+
+  .hero-bottom {
+    max-width: 100%;
+    padding: 15px;
+  }
+}

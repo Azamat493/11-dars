@@ -13,6 +13,7 @@
   background: var(--call-to-action);
   gap: 5px;
   margin-bottom: 10px;
+  border: none;
   &:hover {
     background: #5c3dff;
     transform: translateY(-3px);
@@ -38,6 +39,7 @@
   background: var(--call-to-action);
   gap: 5px;
   margin-bottom: 10px;
+  border: none;
   &:hover {
     background: #5c3dff;
     transform: translateY(-3px);

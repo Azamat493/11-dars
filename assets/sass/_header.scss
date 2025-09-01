@@ -1,16 +1,17 @@
 header {
   padding: 40px 60px;
   background: var(--background);
+  position: sticky;
+    top: 0;
+    z-index: 999;
   .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style: none;
     gap: 25px;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-
+    
+  
     a {
       font-family: var(--second-family);
       font-weight: 600;
@@ -36,6 +37,7 @@ header {
       justify-content: center;
       background: var(--call-to-action);
       gap: 5px;
+      border: none;
       &:hover {
         background: #5c3dff;
         transform: translateY(-3px);

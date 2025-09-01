@@ -1,0 +1,141 @@
+.grid_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+.nft-thumb {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+.card-number {
+  border-radius: 20px;
+  padding: 32px 15px;
+  width: 100%;
+  max-width: 100px;
+  height: 100px;
+  background: var(--call-to-action);
+  h1 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--text);
+  }
+}
+.section {
+    padding: 80px 0px;
+  h2 {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: var(--text);
+    margin-bottom: 10px;
+  }
+  p {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: var(--text);
+    margin-bottom: 40px;
+  }
+}
+.avatar2 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.grid-bottom {
+  margin-top: 20px;
+  h3 {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: var(--text);
+    margin-bottom: 10px;
+  }
+  h4 {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--text);
+  }
+}
+@media (max-width: 1120px) {
+  .grid_cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .grid_cards {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .section p {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .section h2 {
+    font-size: 24px;
+  }
+  .section p {
+    font-size: 16px;
+  }
+  .grid-bottom h3 {
+    font-size: 18px;
+  }
+  .grid-bottom h4 {
+    font-size: 14px;
+  }
+  .card-number {
+    width: 80px;
+    height: 80px;
+    padding: 20px 10px;
+  }
+  .card-number h1 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 340px) {
+  .section {
+    padding: 40px 0;
+  }
+  .section h2 {
+    font-size: 20px;
+  }
+  .section p {
+    font-size: 14px;
+  }
+  .grid_cards {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .nft-thumb {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

@@ -14,22 +14,22 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 30px;
   margin-top: 30px;
-  
-  .cards {
-     border-radius: 20px;
-  width: 100%;
-  max-width: 240px;     
-  height: 316px;       
-  background: var(--background---secondary);
-  position: relative;
-  overflow: hidden; 
 
-  .cards img {
+  .cards {
+    border-radius: 20px;
     width: 100%;
-  height: 100%;
-  object-fit: cover;   
-  display: block;
-}
+    max-width: 240px;
+    height: 316px;
+    background: var(--background---secondary);
+    position: relative;
+    overflow: hidden;
+
+    .cards img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
   }
   .card-text {
     font-family: var(--second-family);
@@ -39,8 +39,8 @@
     text-transform: capitalize;
     color: var(--text);
     position: absolute;
-    bottom: 15px;       
-    left: 15%; 
+    bottom: 15px;
+    left: 15%;
     width: max-content;
   }
 }
@@ -57,26 +57,26 @@
 @media (max-width: 600px) {
   .cards_categories {
     grid-template-columns: 1fr;
-    justify-content: center; 
+    justify-content: center;
   }
 
   .cards {
-    max-width: 240px; 
+    max-width: 240px;
     width: 100%;
-    margin: 0 auto;   
+    margin: 0 auto;
   }
 }
 @media (max-width: 600px) {
-    .cards_categories {
+  .cards_categories {
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     gap: 20px;
   }
 
   .cards {
-    max-width: 240px; /* фиксируем ширину карточки */
+    max-width: 240px;
     width: 100%;
-    margin: 0 auto;   /* для подстраховки */
+    margin: 0 auto;
   }
 }
 @media (max-width: 380px) {
@@ -87,38 +87,36 @@
   }
 
   .cards {
-   border-radius: 20px;
-width: 147px;
-height: 209px;  
+    border-radius: 20px;
+    width: 147px;
+    height: 209px;
   }
-.card-text {
+  .card-text {
     h3 {
-font-size: 16px;
-    bottom: 8px;
+      font-size: 16px;
+      bottom: 8px;
     }
-    
   }
 }
-/* Совсем маленькие экраны */
 @media (max-width: 300px) {
   .cards_categories {
     grid-template-columns: 1fr;
     justify-content: center;
-    gap: 15px; /* уменьшаем отступы */
+    gap: 15px;
   }
 
   .cards {
-   border-radius: 20px;
-width: 147px;
-height: 209px;  
+    border-radius: 20px;
+    width: 147px;
+    height: 209px;
   }
   .card-text {
-    font-size: 18px; /* уменьшаем текст */
+    font-size: 18px;
     left: 10%;
   }
 
   .categories h2 {
-    font-size: 26px; /* заголовок тоже меньше */
+    font-size: 26px;
     text-align: center;
   }
 }

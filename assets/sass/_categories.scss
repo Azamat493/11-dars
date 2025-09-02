@@ -1,0 +1,124 @@
+.categories {
+  padding: 80px 60px;
+  h2 {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: var(--text);
+  }
+}
+.cards_categories {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+  
+  .cards {
+     border-radius: 20px;
+  width: 100%;
+  max-width: 240px;     
+  height: 316px;       
+  background: var(--background---secondary);
+  position: relative;
+  overflow: hidden; 
+
+  .cards img {
+    width: 100%;
+  height: 100%;
+  object-fit: cover;   
+  display: block;
+}
+  }
+  .card-text {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: var(--text);
+    position: absolute;
+    bottom: 15px;       
+    left: 15%; 
+    width: max-content;
+  }
+}
+@media (max-width: 1200px) {
+  .cards_categories {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .cards_categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .cards_categories {
+    grid-template-columns: 1fr;
+    justify-content: center; 
+  }
+
+  .cards {
+    max-width: 240px; 
+    width: 100%;
+    margin: 0 auto;   
+  }
+}
+@media (max-width: 600px) {
+    .cards_categories {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .cards {
+    max-width: 240px; /* фиксируем ширину карточки */
+    width: 100%;
+    margin: 0 auto;   /* для подстраховки */
+  }
+}
+@media (max-width: 380px) {
+  .cards_categories {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .cards {
+   border-radius: 20px;
+width: 147px;
+height: 209px;  
+  }
+.card-text {
+    h3 {
+font-size: 16px;
+    bottom: 8px;
+    }
+    
+  }
+}
+/* Совсем маленькие экраны */
+@media (max-width: 300px) {
+  .cards_categories {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 15px; /* уменьшаем отступы */
+  }
+
+  .cards {
+   border-radius: 20px;
+width: 147px;
+height: 209px;  
+  }
+  .card-text {
+    font-size: 18px; /* уменьшаем текст */
+    left: 10%;
+  }
+
+  .categories h2 {
+    font-size: 26px; /* заголовок тоже меньше */
+    text-align: center;
+  }
+}

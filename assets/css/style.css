@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -1270,9 +1269,9 @@ footer {
     gap: 20px;
   }
   .cards {
-    max-width: 240px; /* фиксируем ширину карточки */
+    max-width: 240px;
     width: 100%;
-    margin: 0 auto; /* для подстраховки */
+    margin: 0 auto;
   }
 }
 @media (max-width: 380px) {
@@ -1291,12 +1290,11 @@ footer {
     bottom: 8px;
   }
 }
-/* Совсем маленькие экраны */
 @media (max-width: 300px) {
   .cards_categories {
     grid-template-columns: 1fr;
     justify-content: center;
-    gap: 15px; /* уменьшаем отступы */
+    gap: 15px;
   }
   .cards {
     border-radius: 20px;
@@ -1304,12 +1302,251 @@ footer {
     height: 209px;
   }
   .card-text {
-    font-size: 18px; /* уменьшаем текст */
+    font-size: 18px;
     left: 10%;
   }
   .categories h2 {
-    font-size: 26px; /* заголовок тоже меньше */
+    font-size: 26px;
     text-align: center;
+  }
+}
+.discover {
+  padding: 80px 60px;
+}
+.discover h1 {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+.discover .discover-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.discover-button {
+  border: 2px solid var(--call-to-action);
+  border-radius: 20px;
+  padding: 0px 50px;
+  width: 247px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+.discover-button h2 {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: var(--text);
+}
+.discover-button:hover {
+  background-color: var(--call-to-action);
+  color: #fff;
+}
+
+.icons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+.icons-grid .icon {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  background: var(--background---secondary);
+}
+.icons-grid .icon .mini-thumb {
+  border-radius: 20px 20px 0 0;
+  width: 100% !important;
+  height: auto !important;
+}
+.icons-grid .icon .mini-body {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.icons-grid .icon .mini-body h4 {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  text-transform: capitalize;
+  color: var(--text);
+}
+.icons-grid .icon .mini-body .galaxy {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  gap: 15px;
+}
+.icons-grid .icon .mini-body .galaxy h5 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--text);
+}
+
+.mini-thumb img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0 0;
+  display: block;
+}
+
+.discover-button2 {
+  border: 2px solid var(--call-to-action);
+  border-radius: 20px;
+  padding: 0px 50px;
+  width: 90%;
+  max-width: 315px;
+  height: 60px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.discover-button2 h2 {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: var(--text);
+}
+.discover-button2:hover {
+  background-color: var(--call-to-action);
+  color: #fff;
+}
+
+.discover-text-left p {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: var(--text);
+}
+
+.galaxy-bottom {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 20px 0;
+}
+.galaxy-bottom h3 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: var(--caption--label-text);
+}
+
+.galaxy-bottom-price {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--text);
+  margin-top: 5px;
+}
+
+@media (max-width: 1220px) {
+  .icons-grid {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+  .icon {
+    max-width: 300px;
+  }
+}
+@media (max-width: 1075px) {
+  .icons-grid {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .icon {
+    max-width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .discover-text {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .icons-grid {
+    grid-template-columns: 1fr;
+  }
+  .icon {
+    max-width: 320px;
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .discover-text-right {
+    display: none;
+  }
+  .discover-button2 {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .discover {
+    padding: 40px 20px;
+  }
+  .discover h1 {
+    font-size: 28px;
+  }
+  .discover-text-left p {
+    font-size: 18px;
+  }
+  .discover-button {
+    width: 180px;
+    height: 45px;
+    gap: 10px;
+    padding: 0 15px;
+  }
+  .discover-button h2 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 300px) {
+  .discover h1 {
+    font-size: 22px;
+  }
+  .discover-text-left p {
+    font-size: 14px;
+  }
+  .discover-button {
+    width: 150px;
+    height: 40px;
+    padding: 0 10px;
+    gap: 8px;
+  }
+  .discover-button h2 {
+    font-size: 12px;
+  }
+  .icon {
+    max-width: 260px;
   }
 }
 
